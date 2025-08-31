@@ -1,0 +1,176 @@
+/* ====== Global Styles ====== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #f0f8ff);
+  color: #333;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ====== Header Section ====== */
+header {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+}
+
+/* ====== Sections ====== */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #ffffffdd;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+
+/* ====== Projects Section ====== */
+#projects .project-card {
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Contact Section ====== */
+#contact {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+#contact input, #contact textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+#contact button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#contact button:hover {
+  background: #555;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+/* ====== Scroll Animations ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Soft Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+.skill {
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  font-size: 1.05rem;
+  color: #333;
+  font-weight: 500;
+}
+
+
+/* Different background colors for each soft skill */
+.skill:nth-child(1) { background: #ffe0e0; } /* Team Collaboration */
+.skill:nth-child(2) { background: #e0f7fa; } /* Communication */
+.skill:nth-child(3) { background: #e8f5e9; } /* Problem Solving */
+.skill:nth-child(4) { background: #fff3e0; } /* Time Management */
+.skill:nth-child(5) { background: #f3e5f5; } /* Adaptability */
+.skill:nth-child(6) { background: #e1f5fe; } /* Critical Thinking */
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin-right: 20px;
+  transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.08);
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
